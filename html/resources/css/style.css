@@ -1,0 +1,480 @@
+/*===========================================*/
+/*BASIC SETUP*/
+/*==========================================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    text-rendering: optimizeLegibility;
+
+   
+}
+ul li{
+    list-style-type: none;
+}
+
+/*===========================================*/
+/*REUSABLE COMPONENT*/
+/*==========================================*/
+.row{
+   max-width: 114rem;
+
+    margin: 0 auto;
+   
+}
+
+.box img{
+    height: 12.3rem;
+    margin-top: 8.5rem;
+    margin-bottom: 6.5rem;
+}
+
+
+
+section{
+    padding: 12rem  0;
+    text-align: center;
+ 
+}
+h2{
+    font-size: 4rem;
+    color:#fff;
+   margin-bottom: 2rem;
+   font-weight: 400;
+   text-transform: uppercase;
+   letter-spacing: 0.4rem;
+    
+}
+h4{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 2rem 0;
+}
+h2::after{
+    content: "";
+    display: block;
+    height: 0.4rem;
+    background: #14a58c;
+    width: 8.5rem;
+    margin: auto;
+    margin-top: 2.3rem;
+}
+.para-text{
+    font-size: 1.8rem;
+    width: 60%;
+    margin-left: 20%;
+    color: #fff;
+    font-weight: 300;
+
+}
+h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 3.3rem;
+}
+p{
+    font-size: 16px;
+    color: #fff;
+}
+
+/*===========================================*/
+/*HEADER SECTION*/
+/*==========================================*/
+header{
+
+    height: 95vh;
+    position: relative;
+    background-image:linear-gradient(rgba(135, 80, 156, 0.9),rgba(135, 80, 156, 0.9)), url(img/macbook.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.logo{
+    height: 3rem;
+    width: auto;
+    float: left;
+    margin-top: 3rem;
+}
+/*===========================================*/
+/*MAIN NAVIGATION*/
+/*==========================================*/
+nav{
+    position: relative;
+}
+.main-nav{
+    float: right;
+    margin-top: 3rem;
+}
+.main-nav li{
+    display: inline-block;
+     margin-left: 1.3rem;
+     font-size: 1.6rem;
+    
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.3rem 1.5rem;
+    
+    border-radius: 3px;
+    transition: 0.4s;
+    
+
+
+}
+.main-nav li:first-child {
+    margin-left: 0;
+}
+.main-nav li:hover a:link, 
+.main-nav li:hover a:visited {
+background-color:#643a79;
+} 
+.active{
+    background-color:#643a79;
+}
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    width: 100rem;
+    z-index: 1;
+}
+
+/*HEADING*/
+h1{
+    font-size: 3.4rem;
+}
+/*button*/
+.btn{
+    background-color:#eb7d4b;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border: 1px solid #c86a40;
+    padding: 1.2rem 7rem;
+    color: #ffff;
+    border-radius: 0.3rem;
+}
+
+/*===========================================*/
+/*SERVICES SECTION*/
+/*==========================================*/
+.section-content{
+    background:linear-gradient(rgba(23, 194, 163, 0.89),rgba(23, 194, 163, 0.89)), url(img/macbook.jpg) ;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+   
+ 
+    
+}
+/*===========================================*/
+/*TEAM SECTION*/
+/*==========================================*/
+.team-section{
+    background:linear-gradient(rgba(124, 15, 167, 0.87),rgba(124, 15, 167, 0.829)), url(img/women-conversation.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.team-section img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+}
+.role{
+    color: rgb(8, 235, 39);
+    font-size: 1.6rem;
+    
+   
+}
+.team-section p{
+    margin-top: 2rem;
+}
+.team-section h3{
+    margin-bottom: 1rem;
+}
+.social-icon {
+    margin-top: 2rem;
+    
+}
+.social-icon ul li {
+    display: inline-block;
+    margin: 0 .5rem;
+}
+.social-icon ul li a{
+    color: #ffff;
+
+  } 
+  .social-icon ul li a:link i::before {
+     background: rgb(124, 15, 167);
+      height: 2 rem; 
+      width: 2 rem; 
+      border-radius: 50%;
+      font-size: 2rem;
+      padding: 1rem;
+      display: inline-block;
+      padding: 1rem;
+      transition: 0.5s;
+    }
+    .social-icon ul li a:hover i::before{
+        background: black;
+        transform: rotate(360deg);
+       
+    }
+
+/*===========================================*/
+/*SKILL SECTION*/
+/*==========================================*/
+.skill-section h2{
+    color: #000;
+}
+.skill-section p{
+    color: black;
+}
+.skill-section h2::after{
+    background: #dfe8ed;
+}
+
+.skill-section{
+    background: linear-gradient(rgba(255, 255, 255, 0.836),rgba(255, 255, 255, 0.747)), url(img/women-conversation.jpg) ;
+ 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+   
+}
+.skill-section .col:nth-child(3) {
+    margin-left: 0;
+}
+.skill-section .color1 circle {
+    stroke: rgb(4, 241, 56);
+}
+.skill-section .color2 circle {
+    stroke: rgb(156, 17, 168);
+}
+.skill-section .color3 circle {
+    stroke: rgb(241, 4, 142);
+}
+.skill-section .color4 circle {
+    stroke: rgb(4, 28, 241);
+}
+.skill-section h3{
+    color: #000;
+}
+/*===========================================*/
+/*PORTFOLIO SECTION*/
+/*==========================================*/
+.portfolio-section {
+    background:linear-gradient(rgba(255, 221, 153, 0.74),rgba(255, 221, 153, 0.747)),url(img/cover3.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.portfolio-section h2{
+    color: #393939;
+}
+.portfolio-section .para-text{
+    color: #393939;
+}
+.portfolio-section .button{
+    margin: 4rem 0;
+}
+.portfolio-section button{
+    background: #ebc985;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: .5rem;
+    padding: 1rem 2.4rem;
+    margin: 0 .5rem;
+    transition: 0.5s;
+}
+.portfolio-section .col:nth-child(3) {
+    margin-left: 0;
+}
+.portfolio-section img{
+    width: 94%;
+    height: auto;
+}
+.portfolio-section button:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+.portfolio-section .mixitup-control-active{
+ background: #ffff;
+
+}
+/*===========================================*/
+/*CLINT SECTION*/
+/*==========================================*/
+.clint-section {
+    background: linear-gradient(rgba(215, 70, 128, 0.801),rgba(215, 70, 128, 0.788)), url(img/cover1.jpg) ;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  
+}
+.clint-section .col:nth-child(3) {
+    margin-left: 0;
+}
+.clint-section .image{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    float: left;
+
+  
+}
+.clint-section .col:nth-child(1),
+.clint-section .col:nth-child(2){
+    margin-bottom: 10rem;
+}
+
+.clint-section .para-text{
+    margin-bottom: 7rem;
+}
+.clint-section .clint-review{
+    width: 29rem;
+    margin: auto;
+    margin-bottom: 3.5rem;
+   font-style: italic;
+}
+.clint-section h3{
+margin-right: 17rem;
+margin-bottom: 0.3rem;
+ 
+}
+.clint-section .role{
+ margin-right: 12rem;
+}
+/*===========================================*/
+/*FORM SECTION*/
+/*==========================================*/
+.form-section{
+    background:linear-gradient(rgba(60, 83, 153, 0.904),rgba(60, 83, 153, 0.897)),url(img/cover1.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+   background: #273a71;
+   width: 100%;
+   padding: 1.5rem;
+   border: .1rem solid #273a71;
+   font-size: 1.8rem; 
+   border-radius: 1rem;
+   color: #FFF;
+   margin: 1rem;
+}
+.form-section form ::placeholder{
+    color: #ffff;
+    opacity: 1;
+}
+textarea{
+    color: #ffff;
+}
+input[type="submit"]{
+ margin-top: 5rem;
+}
+.form-section form,
+textarea {
+    width: 70%;
+    margin: auto;
+}
+.btn-submit{
+    background: #30bae7;
+    border: 0;
+}
+.btn-submit:hover{
+    cursor: pointer;
+    box-shadow: inset .1rem .1rem .1rem .1rem black;
+}
+/*===========================================*/
+/*FORM SECTION*/
+/*==========================================*/
+footer{
+    background: #344b8e;
+}
+
+footer ul li{
+    display: inline-block;
+    padding: 7rem 0;
+    margin-left: 5rem;
+}
+footer ul li a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1.8rem;
+    padding: 2rem 2rem;
+  
+}
+footer ul li a:hover{
+ color: #30bae7;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(135, 80, 156, 0.897);
+    box-shadow: 0 0.1rem 1rem 0 rgba(255, 255, 255, 0.767);
+    z-index: 9999;
+}
+.sticky .logo{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.sticky .main-nav {
+    margin-top: 2rem;
+}
+.fa-bars{
+    display: none;
+    color: #fff;
+}
+.mobileMenu{
+    display: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.815);
+   
+    overflow: hidden;
+    text-align: center;
+    margin-top: 1rem;
+    height: 25rem;
+    text-transform: uppercase;
+}
+.mobileMenu ul li a:link,
+.mobileMenu ul li a:hover{
+    color: #ffff;
+}
+   
+.mobileMenu ul li{
+    list-style-type: none;
+     
+}
+.mobileMenu ul li a {
+   text-decoration: none;
+   font-size: 3rem;
+
+}

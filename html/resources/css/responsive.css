@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1200px){
+    .logo{
+        margin-left: 7rem;
+    }
+}
+@media only screen and (max-width: 1024px){
+
+header .row{
+    margin: 0 2rem;
+}
+.hero-text-box{
+     width: 96%;
+ }
+
+.clint-section .image{
+    float: none;
+    
+}
+.clint-review {
+    text-align: center;
+}
+.clint-section h3{
+    margin:auto;
+    margin-top: -2rem;
+}
+span.role{
+   
+    margin-left: 12rem;
+}
+.form-section form{
+    width: 98%;
+    margin-left: 0;
+}
+.sticky{
+    display: none;
+}
+.main-nav {
+    display: none;
+}
+.fa-bars {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+}
+
+    .span_1_of_4{
+        width: 49.2%;
+        margin-left: 0;
+    }
+    .hero-text-box{
+        top: 60%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+}
+@media only screen and (max-width: 480px){
+    .span_1_of_4{
+        width: 100%;
+    
+    } 
+    h2,h3,h4{
+            font-size: 2rem;
+        } 
+        footer ul li{
+            padding: 1rem 0;
+        }
+        input[type="submit"]{
+            margin-top: 1rem;
+          
+        }
+        .form-section{
+            padding-bottom: 3rem;
+            
+        }
+
+}           
+@media only screen and (max-width: 280px){
+    .portfolio-section button{
+        font-size: 1rem;
+        padding: 0;
+    }
+    .form-section input[type="text"], .form-section input[type="email"], .form-section textarea{
+        margin: 0;
+    }
+    footer ul li a{
+        font-size: 1rem;
+        padding: 0 0;
+    }
+}
